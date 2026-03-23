@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnackZone - Chips & Cold Drinks</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #ff6b6b;
+            padding: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px;
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🍟 SnackZone</h1>
+    <p>Chips & Cold Drinks</p>
+</header>
+
+<div class="products">
+
+    <div class="card">
+        <h3>Potato Chips</h3>
+        <p>₹50</p>
+        <button onclick="addToCart('Potato Chips')">Add</button>
+    </div>
+
+    <div class="card">
+        <h3>Corn Chips</h3>
+        <p>₹60</p>
+        <button onclick="addToCart('Corn Chips')">Add</button>
+    </div>
+
+    <div class="card">
+        <h3>Cold Drink</h3>
+        <p>₹40</p>
+        <button onclick="addToCart('Cold Drink')">Add</button>
+    </div>
+
+</div>
+
+<script>
+function addToCart(item){
+    alert(item + " added!");
+}
+</script>
+
+</body>
+</html>
